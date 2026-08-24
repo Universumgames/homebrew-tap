@@ -1,6 +1,6 @@
 cask "claude-battery" do
-  version "1.0.0"
-  sha256 "6feef0bb710d724374b780abc29eebdd8454cbf90647f6adaa10f726d49fbf2f"
+  version "1.1"
+  sha256 "3c676fa1348b82c44ac4f8058d1136ae8e6e180b8a2654b0ba46abf25708600a"
 
   url "https://github.com/Universumgames/Claude_Battery/releases/download/v#{version}/ClaudeBattery.dmg"
   name "ClaudeBattery"
