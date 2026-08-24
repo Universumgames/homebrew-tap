@@ -2,7 +2,7 @@ cask "claude-battery" do
   version "1.0.0"
   sha256 "6feef0bb710d724374b780abc29eebdd8454cbf90647f6adaa10f726d49fbf2f"
 
-  url "https://github.com/Universumgames/Claude_Battery/releases/download/v#{version}/ClaudeBattery.app.zip"
+  url "https://github.com/Universumgames/Claude_Battery/releases/download/v#{version}/ClaudeBattery.dmg"
   name "ClaudeBattery"
   desc "Menu bar app showing your claude.ai Pro/Max usage as a battery icon"
   homepage "https://github.com/Universumgames/Claude_Battery"
