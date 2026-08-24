@@ -1,25 +1,25 @@
-cask "claude-usage" do
+cask "claude-battery" do
   version "1.0.0"
   sha256 "6feef0bb710d724374b780abc29eebdd8454cbf90647f6adaa10f726d49fbf2f"
 
-  url "https://github.com/Universumgames/Claude_Battery/releases/download/v#{version}/Claude.Usage.app.zip"
-  name "Claude Usage"
+  url "https://github.com/Universumgames/Claude_Battery/releases/download/v#{version}/ClaudeBattery.app.zip"
+  name "ClaudeBattery"
   desc "Menu bar app showing your claude.ai Pro/Max usage as a battery icon"
   homepage "https://github.com/Universumgames/Claude_Battery"
 
   depends_on macos: :ventura
 
-  app "Claude Usage.app"
+  app "ClaudeBattery.app"
 
   postflight do
     system_command "/usr/bin/xattr",
-                    args: ["-cr", "#{appdir}/Claude Usage.app"],
+                    args: ["-cr", "#{appdir}/ClaudeBattery.app"],
                     sudo: false
   end
 
   zap trash: [
-    "~/Library/Caches/de.universegame.ClaudeUsageMenuBar",
-    "~/Library/Preferences/de.universegame.ClaudeUsageMenuBar.plist",
+    "~/Library/Caches/de.universegame.ClaudeBattery",
+    "~/Library/Preferences/de.universegame.ClaudeBattery.plist",
   ]
 
   caveats <<~EOS

@@ -4,10 +4,10 @@
 
 ```
 brew tap Universumgames/tap
-brew install --cask claude-usage
+brew install --cask claude-battery
 ```
 
 ## Casks
 
-- **claude-usage** — [Claude Usage](https://github.com/Universumgames/Claude_Battery), a macOS menu
+- **claude-battery** — [ClaudeBattery](https://github.com/Universumgames/Claude_Battery), a macOS menu
   bar app showing your claude.ai Pro/Max usage as a battery icon.
