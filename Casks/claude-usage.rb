@@ -7,7 +7,7 @@ cask "claude-usage" do
   desc "Menu bar app showing your claude.ai Pro/Max usage as a battery icon"
   homepage "https://github.com/Universumgames/Claude_Battery"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Claude Usage.app"
 
