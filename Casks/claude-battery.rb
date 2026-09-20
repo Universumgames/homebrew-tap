@@ -11,10 +11,9 @@ cask "claude-battery" do
 
   app "ClaudeBattery.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                    args: ["-cr", "#{appdir}/ClaudeBattery.app"],
-                    sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-cr", "{{appdir}}/ClaudeBattery.app"]
   end
 
   zap trash: [
